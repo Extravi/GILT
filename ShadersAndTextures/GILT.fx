@@ -346,25 +346,25 @@ technique GILT
     }
     pass
 	{
-	 VertexShader = PostProcessVS;
-	 PixelShader = PS_DisplayDepth;
-	 RenderTarget = BufferTex;
+        VertexShader = PostProcessVS;
+        PixelShader = PS_DisplayDepth;
+        RenderTarget = BufferTex;
 	}
     pass
 	{
-	 VertexShader = PostProcessVS;
-	 PixelShader = PS_NormalBuffer;
-	 RenderTarget = NormalTex;
+        VertexShader = PostProcessVS;
+        PixelShader = PS_NormalBuffer;
+        RenderTarget = NormalTex;
 	}
     pass
 	{
-	 VertexShader = PostProcessVS;
-	 PixelShader = PS_ComputeGI;
-         RenderTarget = OutputTex;
+        VertexShader = PostProcessVS;
+        PixelShader = PS_ComputeGI;
+        RenderTarget = OutputTex;
 	}
     pass
 	{
-	 VertexShader = PostProcessVS;
-	 PixelShader = Output;
+        VertexShader = PostProcessVS;
+        PixelShader = Output;
 	}
 }
